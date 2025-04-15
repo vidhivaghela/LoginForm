@@ -1,20 +1,16 @@
 import { useState } from "react";
 import Login from "./components/Login";
 import Signup from './components/Signup';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  const [showLogin, setShowLogin] = useState(true);
   return (
-    <div>
-      {showLogin ? <Login /> : <Signup />}
-      <div className="flex justify-center mt-4">
-        <button
-        className="text-sm text-blue-600 underline"
-        onClick={() => setShowLogin(!showLogin)}>
-           {showLogin ? "Don't have an account? Sign Up" : "Already have an account? Log In"}
-        </button>
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
+    </Router>
   );
 }
 
