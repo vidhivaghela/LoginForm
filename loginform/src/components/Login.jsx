@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Signup from "./Signup";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -64,7 +65,7 @@ const Login = () => {
 
         <p className="text-sm text-center text-gray-500">
           Don’t have an account?{" "}
-          <a href="#" className="text-blue-500 hover:underline">
+          <a href="./Signup" className="text-blue-500 hover:underline">
             Sign up
           </a>
         </p>
