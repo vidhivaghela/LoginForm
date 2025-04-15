@@ -49,7 +49,7 @@ const Signup = () => {
             className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-400"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Jane Doe"
+            placeholder="Name"
           />
         </div>
 
@@ -60,7 +60,7 @@ const Signup = () => {
             className="mt-1 w-full px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-400"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="jane@example.com"
+            placeholder="email@example.com"
           />
         </div>
 
@@ -94,7 +94,7 @@ const Signup = () => {
         </button>
 
         <p className="text-sm text-center text-gray-500">
-          Already have an account? <a href="#" className="text-green-500 hover:underline">Log in</a>
+          Already have an account? <a href="./Login" className="text-green-500 hover:underline">Log in</a>
         </p>
       </form>
     </div>
